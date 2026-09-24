@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[#F8FAFC] antialiased selection:bg-cyan-500 selection:text-black;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    background-color: #030712;
+    background-image: 
+      /* Deep space nebula glows */
+      radial-gradient(ellipse 90% 70% at 15% -10%, rgba(6, 182, 212, 0.16), transparent 50%),
+      radial-gradient(ellipse 70% 60% at 85% 110%, rgba(99, 102, 241, 0.14), transparent 50%),
+      radial-gradient(ellipse 60% 50% at 50% 50%, rgba(15, 23, 42, 0.6), transparent 70%),
+      /* Distant starfield cluster layers */
+      radial-gradient(circle 1.5px at 10% 20%, rgba(255, 255, 255, 0.85), transparent 1.5px),
+      radial-gradient(circle 2px at 25% 45%, rgba(6, 182, 212, 0.8), transparent 2px),
+      radial-gradient(circle 1px at 38% 15%, rgba(255, 255, 255, 0.6), transparent 1px),
+      radial-gradient(circle 2px at 55% 30%, rgba(147, 197, 253, 0.75), transparent 2px),
+      radial-gradient(circle 1.5px at 70% 12%, rgba(255, 255, 255, 0.9), transparent 1.5px),
+      radial-gradient(circle 1px at 85% 40%, rgba(255, 255, 255, 0.5), transparent 1px),
+      radial-gradient(circle 2px at 92% 18%, rgba(6, 182, 212, 0.7), transparent 2px),
+      radial-gradient(circle 1.5px at 15% 75%, rgba(255, 255, 255, 0.7), transparent 1.5px),
+      radial-gradient(circle 2px at 30% 88%, rgba(129, 140, 248, 0.7), transparent 2px),
+      radial-gradient(circle 1px at 48% 65%, rgba(255, 255, 255, 0.5), transparent 1px),
+      radial-gradient(circle 2px at 68% 80%, rgba(255, 255, 255, 0.8), transparent 2px),
+      radial-gradient(circle 1.5px at 82% 70%, rgba(6, 182, 212, 0.75), transparent 1.5px),
+      radial-gradient(circle 1px at 95% 90%, rgba(255, 255, 255, 0.6), transparent 1px);
+    background-attachment: fixed;
+  }
+}
+
+/* Futuristic Space HUD Grid & Coordinates */
+.space-hud-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+}
+
+/* Mission Control Glassmorphic Surface with Cosmic Glow */
+.space-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(11, 18, 32, 0.92) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 41, 59, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.space-card:hover {
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 12px 40px -4px rgba(6, 182, 212, 0.18), inset 0 1px 1px 0 rgba(6, 182, 212, 0.2);
+}
+
+/* Glowing Neon Utilities */
+.glow-cyan {
+  text-shadow: 0 0 12px rgba(6, 182, 212, 0.6), 0 0 24px rgba(6, 182, 212, 0.3);
+}
+
+.glow-blue {
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.6), 0 0 24px rgba(59, 130, 246, 0.3);
+}
+
+.glow-red {
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.6), 0 0 24px rgba(239, 68, 68, 0.3);
+}
+
+.border-glow-cyan {
+  box-shadow: 0 0 15px -2px rgba(6, 182, 212, 0.35);
+}
+
+.border-glow-blue {
+  box-shadow: 0 0 15px -2px rgba(59, 130, 246, 0.35);
+}
+
+/* Futuristic Scanline Effect for Space Dashboard */
+.space-scanline {
+  position: relative;
+}
+.space-scanline::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 3px, 6px 100%;
+  opacity: 0.25;
+  border-radius: inherit;
+}
+
+/* Orbit Telemetry Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06B6D4;
+}
+
+/* Keyframe Animations for Orbital Pulse and Starlight */
+@keyframes starlight-twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes orbit-radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-twinkle {
+  animation: starlight-twinkle 4s ease-in-out infinite;
+}
+
+.animate-radar-sweep {
+  animation: orbit-radar-sweep 8s linear infinite;
+}

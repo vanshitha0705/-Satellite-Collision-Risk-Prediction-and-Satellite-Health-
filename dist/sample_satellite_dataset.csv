@@ -1,0 +1,11 @@
+satellite_id,name,orbit_type,altitude_km,velocity_kms,inclination_deg,debris_distance_km,relative_velocity_kms,nearby_objects_count,fuel_remaining_pct,battery_health_pct,satellite_age_years,thruster_status,communication_status,time_since_maneuver_days,mission_priority,risk_level,collision_probability,operational_health_score,status
+SAT-48201,Starlink-1042,LEO,550.2,7.59,53.0,0.38,11.4,14,18.5,82.0,3.8,Degraded,Continuous,42,Medium,Critical,0.0740,48,Active Alert
+SAT-39084,Sentinel-1A,SSO,693.4,7.51,98.18,1.12,9.8,8,64.0,91.5,8.2,Nominal,Continuous,18,Critical,High,0.0180,84,Under Assessment
+SAT-25544,ISS Alpha,LEO,418.6,7.66,51.64,4.85,14.2,26,92.0,96.0,12.4,Nominal,Continuous,9,Critical,Low,0.0012,95,Monitored
+SAT-43013,OneWeb-0012,LEO,1200.4,7.24,87.4,0.74,12.8,11,35.0,74.0,5.1,Nominal,Continuous,61,High,High,0.0380,68,Action Required
+SAT-32765,Envisat Legacy,SSO,768.1,7.47,98.54,0.22,13.9,34,0.0,12.0,15.0,Inoperative,Blackout,900,Low,Critical,0.1420,8,Uncontrollable
+SAT-20580,Hubble Telescope,LEO,535.0,7.60,28.47,3.20,7.2,6,0.0,78.0,14.8,Inoperative,Continuous,410,Critical,Medium,0.0031,52,Monitored
+SAT-40019,Galileo-FOC 24,MEO,23222.0,3.67,56.0,12.4,2.4,2,78.0,95.0,4.2,Nominal,Continuous,110,High,Low,0.0001,96,Nominal
+SAT-44238,Starlink-1402,LEO,548.8,7.59,53.2,0.89,10.9,17,12.0,69.0,3.5,Nominal,Intermittent,75,Medium,High,0.0520,42,Action Required
+SAT-28654,NOAA-18 Weather,SSO,854.0,7.42,98.7,1.84,14.1,19,44.0,81.0,11.2,Degraded,Continuous,88,High,Medium,0.0210,65,Under Assessment
+SAT-37849,Suomi NPP,SSO,824.0,7.44,98.7,2.70,8.5,12,58.0,88.0,7.9,Nominal,Continuous,35,High,Medium,0.0078,82,Nominal

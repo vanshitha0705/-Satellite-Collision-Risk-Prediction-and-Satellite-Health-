@@ -1,0 +1,108 @@
+{
+  "model_comparison": [
+    {
+      "id": "logistic_regression",
+      "name": "Logistic Regression",
+      "accuracy": 89.3,
+      "precision": 89.2,
+      "recall": 89.3,
+      "f1": 89.1,
+      "isSelected": false
+    },
+    {
+      "id": "decision_tree",
+      "name": "Decision Tree (CART)",
+      "accuracy": 85.0,
+      "precision": 84.7,
+      "recall": 85.0,
+      "f1": 84.9,
+      "isSelected": false
+    },
+    {
+      "id": "random_forest",
+      "name": "Random Forest Classifier",
+      "accuracy": 89.0,
+      "precision": 89.1,
+      "recall": 89.0,
+      "f1": 88.1,
+      "isSelected": true
+    },
+    {
+      "id": "xgboost",
+      "name": "Gradient Boosted Trees (XGBoost)",
+      "accuracy": 90.2,
+      "precision": 90.0,
+      "recall": 90.2,
+      "f1": 90.0,
+      "isSelected": false
+    }
+  ],
+  "feature_importances": [
+    {
+      "feature": "debris_distance",
+      "importance": 50.85
+    },
+    {
+      "feature": "fuel_remaining",
+      "importance": 8.56
+    },
+    {
+      "feature": "relative_velocity",
+      "importance": 7.4
+    },
+    {
+      "feature": "thruster_status_num",
+      "importance": 6.77
+    },
+    {
+      "feature": "satellite_age",
+      "importance": 5.12
+    },
+    {
+      "feature": "battery_health",
+      "importance": 4.45
+    },
+    {
+      "feature": "days_since_maneuver",
+      "importance": 3.9
+    },
+    {
+      "feature": "velocity",
+      "importance": 3.32
+    },
+    {
+      "feature": "altitude",
+      "importance": 3.29
+    },
+    {
+      "feature": "nearby_objects",
+      "importance": 2.94
+    },
+    {
+      "feature": "comm_status_num",
+      "importance": 2.18
+    },
+    {
+      "feature": "inclination",
+      "importance": 1.22
+    }
+  ],
+  "confusion_matrix": [
+    [
+      250,
+      49,
+      0
+    ],
+    [
+      25,
+      829,
+      4
+    ],
+    [
+      0,
+      59,
+      34
+    ]
+  ],
+  "test_samples_count": 1250
+}
